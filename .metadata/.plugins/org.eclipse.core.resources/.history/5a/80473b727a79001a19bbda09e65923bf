@@ -1,0 +1,9 @@
+package utility;
+
+public class Helper {
+	
+	public void captureScreenshot() {
+		
+	}
+
+}

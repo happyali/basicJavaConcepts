@@ -1,0 +1,25 @@
+package testcases;
+ 
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import pages.BaseClass;
+import pages.LoginPage;
+import utility.ExcelDataProvider;
+ 
+public class LoginTestCRM extends BaseClass  {
+	
+	
+	
+    @Test
+    public void loginApp() {
+    	
+    	ExcelDataProvider excel= new ExcelDataProvider();
+    	excel.getStringData("Login", 0, 0);
+    	
+    	
+  	// This will initialize all element locator of the class and return the class as an Object
+    	LoginPage loginPage=PageFactory.initElements(driver, LoginPage.class);
+    	loginPage.loginToCRM(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 0));
+    }
+}

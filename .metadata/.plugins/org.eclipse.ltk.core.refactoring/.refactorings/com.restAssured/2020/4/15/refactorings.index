@@ -1,0 +1,13 @@
+1586076423759	Copy compilation unit
+1586085005684	Rename package 'restAPI'
+1586085029600	Rename package 'authConcept'
+1586086265894	Move compilation unit
+1586086272535	Move compilation unit
+1586086321768	Rename type 'CheckAuth'
+1586086350267	Rename type 'PostOauthTweet'
+1586093320354	Rename type 'OAuthConcept'
+1586093337231	Copy compilation unit
+1586173294201	Rename resource 'gradlesetup.md'
+1586173805751	Copy file
+1586173860744	Move 'videoGameAPIsetup.md' to 'test-output'
+1586173869044	Move 'videoGameAPIsetup.md' to 'com.restAssured'

@@ -1,0 +1,25 @@
+package utility;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelDataProvider {
+	
+	
+	XSSFWorkbook wb;
+	
+	public ExcelDataProvider() {
+		
+		// To construct the file path
+		File src=new File("./TestData/testData.xlxs");
+		
+		// To convert the file into Raw Data
+		FileInputStream fis=new FileInputStream(src);
+		
+		// To read XLS file 
+		XSSFWorkbook wb=new XSSFWorkbook(fis);
+	}
+
+}

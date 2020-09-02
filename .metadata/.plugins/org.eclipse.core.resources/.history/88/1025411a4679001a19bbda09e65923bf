@@ -1,0 +1,17 @@
+package testcases;
+ 
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+import utility.BrowserFactory;
+ 
+public class LoginTestCRM {
+	
+	WebDriver driver;
+	
+    @Test
+    public void loginApp() {
+    	driver=BrowserFactory.startApplication(driver, "Chrome", "https://www.frecrm.com/index.html");
+    	
+    	System.out.println(driver.getTitle());
+    }
+}

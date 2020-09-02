@@ -1,0 +1,11 @@
+package utility;
+
+public class Helper {
+	
+	// Screenshot, alert, multipleWindows, Sync Issue, javascript executor
+	
+	public void captureScreenshot() {
+		
+	}
+
+}

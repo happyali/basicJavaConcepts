@@ -1,0 +1,29 @@
+package utility;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelDataProvider {
+	
+	
+	XSSFWorkbook wb;
+	
+	public ExcelDataProvider() {
+		
+		// To construct the file path
+		File src=new File("./TestData/testData.xlxs");
+		
+		try {
+			// To convert the file into Raw Data
+			FileInputStream fis = new FileInputStream(src);
+			
+			// To read XLS file 
+			wb = new XSSFWorkbook(fis);
+		} catch (Exception e) {
+			System.out.println("Unable to read Excel File"+e.getMessage());
+		}
+	}
+
+}

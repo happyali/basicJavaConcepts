@@ -1,0 +1,19 @@
+package utility;
+
+import org.openqa.selenium.WebDriver;
+
+public class BrowserFactory {
+	
+	
+	public static WebDriver startApplication(WebDriver driver, String browserName, String appURL) {
+		if(browserName.equals("Chrome")) {
+			System.setProperties("webdriver.chrome.driver", "./chromedriver.exe");
+		}
+		
+	}
+	
+	public static void quitBRowser() {
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package utility;
+
+import java.io.File;
+
+public class ExcelDataProvider {
+	
+	public ExcelDataProvider() {
+		
+		File src=new File("./TestData/testData.xlxs");
+	}
+
+}

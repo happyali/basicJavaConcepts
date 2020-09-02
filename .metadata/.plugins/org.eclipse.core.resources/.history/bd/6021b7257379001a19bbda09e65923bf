@@ -1,0 +1,16 @@
+package utility;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import javax.imageio.stream.FileImageInputStream;
+
+public class ExcelDataProvider {
+	
+	public ExcelDataProvider() {
+		
+		File src=new File("./TestData/testData.xlxs");
+		FileInputStream fis=new FileInputStream(src);
+	}
+
+}

@@ -1,0 +1,38 @@
+package Aggregation;
+
+/*If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
+ *Consider a situation, Employee object contains many informations such as id, name, emailId etc.
+ *It contains one more object named address, which contains its own informations
+ *such as city, state, country, zipcode etc. as given below.*/
+
+class AggregationHasA {
+
+	int square(int n) {
+		return n * n;
+	}
+	
+	int sum(int a, int b){
+		return a+b;
+	}
+	
+	double sum(double a, double b){
+		return a+b;
+	}
+}
+
+class Circle {
+	AggregationHasA op;						// aggregation
+	double pi = 3.14;
+
+	double area(int radius) {
+		op = new AggregationHasA();
+		int rsquare = op.square(radius);	// code reusability (i.e. delegates the method call).
+		return pi * rsquare;
+	}
+
+	public static void main(String args[]) {
+		Circle c = new Circle();
+		double result = c.area(5);
+		System.out.println(result);
+	}
+}

@@ -1,0 +1,4 @@
+Browser=Chrome
+testUrl=https://ui.cogmento.com/
+devUrl=https://dev-ui.cogmento.com/
+Firstname=TestUser

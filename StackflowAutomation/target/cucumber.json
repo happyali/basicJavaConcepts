@@ -1,0 +1,116 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12224928707,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.setup_firefox()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login into account with valid credentials",
+        "description": "",
+        "id": "login-into-stackflow-account;login-into-account-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 5985609307,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.turndown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4483439824,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User visit to stackflow homepage",
+            "match": {
+              "location": "Login.user_visit_to_stackflow_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1061301451,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on login button on homepage",
+            "match": {
+              "location": "Login.user_clicks_on_login_button_on_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105074245,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter a username",
+            "match": {
+              "location": "Login.user_enter_a_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57485550,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter a password",
+            "match": {
+              "location": "Login.user_enter_a_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261223290,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "Login.user_clicks_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2493256896,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be taken successfully to the login page",
+            "match": {
+              "location": "Login.user_should_be_taken_successfully_to_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login into StackFlow Account",
+    "description": "Existing active user should be able to loginwith valid login credentials.",
+    "id": "login-into-stackflow-account",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

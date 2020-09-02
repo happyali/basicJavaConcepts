@@ -1,0 +1,26 @@
+package utility;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
+
+public class Helper {
+	
+	// Screenshot, alert, multipleWindows, Sync Issue, javascript executor
+	
+	public void captureScreenshot(WebDriver driver) {
+		
+		File src=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	
+		try {
+			FileHandler.copy(src, new File("./Screenshot/capPic.png"));
+		} catch (IOException e) {
+			System.out.println("Not able to capture screenshot"+e.getMessage());
+		}
+	}
+
+}

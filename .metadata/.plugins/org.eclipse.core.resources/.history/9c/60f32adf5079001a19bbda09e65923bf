@@ -1,0 +1,18 @@
+package testcases;
+ 
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import pages.BaseClass;
+import pages.LoginPage;
+ 
+public class LoginTestCRM extends BaseClass  {
+	
+    @Test
+    public void loginApp() {
+  	// This will initialize all element locator of the class and return the class as an Object
+    	LoginPage loginPage=PageFactory.initElements(driver, LoginPage.class);
+    	loginPage.clickToLogin();
+    //	loginPage.loginToCRM("Selenium_50", "Abcd@123456");
+    }
+}

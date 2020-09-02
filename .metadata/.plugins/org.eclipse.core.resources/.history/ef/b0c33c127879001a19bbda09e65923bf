@@ -1,0 +1,11 @@
+package utility;
+
+public class ConfigurationDataProvider {
+	
+	public ConfigurationDataProvider() {
+		
+		File src=new File("./Config/Config.properties")
+	}
+	
+
+}

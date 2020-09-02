@@ -1,0 +1,29 @@
+package testcases;
+ 
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import pages.BaseClass;
+import pages.LoginPage;	
+ 
+public class LoginTestCRM extends BaseClass  {
+	
+	
+	
+    @Test
+    public void loginApp() {
+    	
+  
+    	logger=report.createTest("Login to CRM application");
+    	// This logger is responsible for all logging info in this class.
+    	
+    	
+  	// This will initialize all element locator of the class and return the class as an Object
+    	LoginPage loginPage=PageFactory.initElements(driver, LoginPage.class);
+    	logger.info("Starting the CRM via Login Page");
+    	loginPage.loginToCRM(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 0));
+    	System.out.println("I processed login function");
+    	
+    	logger.pass("Login Successful");
+    }
+}

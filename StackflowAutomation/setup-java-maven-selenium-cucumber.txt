@@ -1,0 +1,48 @@
+1 .Install JAVA JDK
+2. Setup system variables (verify the setup)
+	Environment Variable : System Variables as 
+		JAVA_HOME and path of jdk
+		Edit PATH Variable -->> ;paste same jdk path with "\bin"
+	Verify: java -version
+3. Install Maven (Build management tool):
+	Visit apache maven --> download and click --> binary zip link
+	create a folder in C:ProgramFiles as "ProjectTools"
+4. Set Maven environment variables:
+		System variable as:
+		M2_HOME: location of maven folder from above folder created
+		M2: location of maven with"\bin"
+		Edit Path variable ---> ;%M2%
+		Verify: mvn -v (new cmd window)
+
+5. Download IDE (eclipse neon.3 for Java developer) move the downloaded folder to above folder and then install
+
+6. Create Maven project with ArtifactID as the project folder (UIautomation , apiAutomation etc)
+
+7. Set Windows preference in IDE
+	Maven pref: Window --> Preferences --> Maven --> Installations --> New --> Navigate to folder of Apache Maven (from ProjectTools) and select and finish.
+	Jave: installed JRE's --> Add new directory as the jdk file path and update the "Default VM arguments" as 
+-Dmaven.multiModuleProjectDirectory=M2_HOME (select the jdk checkbox only)
+
+8. Here if you get the "Build Path" error then navigate to Project --> Properties --> Jave Build Path --> Libraries --> Select JRE System Library --> Edit --> Select Alternate JRE as the one set up in above step -- Finish
+
+9. Setup .M2 repo: Project --> Properties --> Jave Build Path --> Libraries -->click "Add Variable" as M2_REPO and path of "c:\usersaccount..\.m2\repository"
+10. now verify that installation is successful:
+	click pom.xml --> Run as --> Maven install --> this should return Build Success message.
+11. Install TestNG:	
+	help --> Eclipse Marketplace --> search "Testng" --> Testng for eclipse --> check all boxes --> accept license --> Restart Eclipse
+12. Install Cucumber via Eclipse Marketplace (dont select JBehave)
+13. Install Cucumber-Eclipse plugin:
+	help --> Eclipse Marketplace --> Install New Software --> Add --> Location as "https://cucumber.io/cucumber-eclipse/update-site"
+14. Download Chorme webdriver and move it to project folder as "webdriver"
+
+	
+ 
+
+
+
+
+	
+		
+
+
+
